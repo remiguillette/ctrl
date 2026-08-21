@@ -1,0 +1,19 @@
+{
+  "name": "x11-ctrl-listener",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Display Ctrl key presses from an X11 desktop in a browser.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1",
+    "uiohook-napi": "^1.5.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

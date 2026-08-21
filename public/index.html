@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ctrl Pulse</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">X11 global key monitor</p>
+      <h1>Press <kbd>Ctrl</kbd></h1>
+      <p id="status" aria-live="polite">Connecting to the listener…</p>
+      <p class="counter"><span id="count">0</span> pulses</p>
+    </main>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
