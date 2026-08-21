@@ -8,7 +8,7 @@ let hue = 225;
 
 socket.on('ready', (message) => {
   count.textContent = message.count;
-  status.textContent = 'Listening for Ctrl anywhere on this desktop';
+  status.textContent = `Listening for Ctrl via ${message.backend}`;
 });
 
 socket.on('ctrl-pressed', (press) => {
